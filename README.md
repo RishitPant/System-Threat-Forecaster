@@ -20,11 +20,12 @@ The dataset originates from Kaggle's **System Threat Forecaster** competition an
 | `test.csv` | Unlabelled test data for generating predictions |
 
 **Key characteristics of the training data:**
-- ~77 raw features across numerical, categorical, binary, and ID types
+- 76 raw features across numerical, categorical, binary, and ID types
 - Mix of `int64`, `float64`, and `object` dtypes
-- Some missing values (up to ~1% for `SMode`)
+- Some missing values (up to ~98% for `SMode`)
 - 165 duplicate rows
 - A **balanced target variable** — roughly equal malware detected vs. not detected
+- Multiple high cardinality features
 
 ---
 
@@ -125,7 +126,7 @@ Grid search (`GridSearchCV`) was used for XGBoost and LightGBM; randomised searc
 |-------|---------------|--------------|
 | XGBoost (tuned) | ~66.5% | ~62.8% |
 | LightGBM (tuned) | ~65.4% | ~62.9% |
-| Random Forest (tuned) | — | — |
+| Random Forest (tuned) | ~63.09 | ~61.04 |
 
 **LightGBM** was selected as the final model for submission due to its best test accuracy and relatively small train/test gap.
 
