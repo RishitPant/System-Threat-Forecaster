@@ -155,7 +155,7 @@ pip install pandas numpy scikit-learn lightgbm xgboost seaborn matplotlib scipy
 
 ## Usage
 
-This notebook is designed to run on **Kaggle** with the competition dataset available at `/kaggle/input/System-Threat-Forecaster/`. To run locally, update the data paths and ensure the dependencies above are installed.
+This notebook is designed to run on **Kaggle** with the competition dataset available at: https://drive.google.com/drive/folders/16krO9T4s0iofU4K-7UyWLuwzE7vcHBhL?usp=sharing. To run locally, update the data paths and ensure the dependencies above are installed.
 
 ```bash
 jupyter notebook notebook.ipynb
